@@ -1,0 +1,9 @@
+<main>
+  <div class="container">
+    <app-task-form (newTask)="doAddNewTask($event)"></app-task-form>
+
+    <div class="content">
+      <app-task-list (deleteTask)="doDeleteTask($event)" [items]="items"></app-task-list>
+    </div>
+  </div>
+</main>

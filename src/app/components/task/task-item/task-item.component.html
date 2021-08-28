@@ -1,0 +1,7 @@
+<li class="list-item" [ngClass]="{ 'animate' : animateItem }">
+  <ng-content class="list-item-text" select="[task]"></ng-content>
+
+  <button (click)="doDeleteTask()" class="btn-remove-item" type="button">
+    <img src="./assets/icons/ic-delete.png" alt="Botão para remover">
+  </button>
+</li>

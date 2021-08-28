@@ -1,0 +1,23 @@
+<form
+  #form="ngForm"
+  (ngSubmit)="doAddNewTask()"
+  class="form"
+  novalidate
+>
+  <input
+    [(ngModel)]="task"
+    [ngClass]="{
+      'has-error': name.invalid && (!name.pristine || form.submitted)
+    }"
+    class="input-text"
+    required
+    #name="ngModel"
+    name="task"
+    type="text"
+    placeholder="Digite"
+  />
+
+  <button class="btn-add" type="submit">
+    <img width="24" height="24" src="./assets/icons/ic-add.png" alt="Botão de adicionar" />
+  </button>
+</form>

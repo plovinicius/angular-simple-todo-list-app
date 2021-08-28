@@ -1,0 +1,18 @@
+<div>
+  <ul class="list" [ngClass]="{ 'hide' : !hasItems }">
+    <app-task-item
+      *ngFor="let item of items; let i = index"
+      [key]="i"
+      (deleteTask)="doDeleteTask($event)"
+    >
+      <span task>
+        {{ item?.text }}
+      </span>
+    </app-task-item>
+  </ul>
+
+  <div class="empty-list"
+       [ngClass]="{ 'hide' : hasItems, 'animate' : animateEmptyList }">
+    <p>Nenhum item cadastrado</p>
+  </div>
+</div>

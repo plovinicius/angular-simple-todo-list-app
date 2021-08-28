@@ -1,0 +1,30 @@
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--item-bg-color);
+  border-radius: 2px;
+  padding: 8px 16px;
+  transition-duration: 0.4s;
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.list-item.animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.list-item > span {
+  flex: 1;
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--text-color);
+}
+
+.btn-remove-item > img {
+  width: 12px;
+  height: 16px;
+}

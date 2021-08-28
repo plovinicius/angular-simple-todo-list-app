@@ -1,0 +1,36 @@
+:root {
+  --bg-color: #F2F2F2;
+  --border-color: #CCCCCC;
+  --primary-color: #40D9B8;
+  --placeholder-color: #909090;
+  --text-color: #606060;
+  --input-color: #303030;
+  --white: #fff;
+  --black: #000;
+  --item-bg-color: #eeeeee;
+}
+
+.html {
+  background: var(--white);
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  border: unset;
+  box-shadow: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.hide {
+  display: none !important;
+}
